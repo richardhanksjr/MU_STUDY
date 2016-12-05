@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+def nextquestion(request):
+    context = {'question': 'question'}
+    template = 'questions/test.html'
+    return render(request, template, context)
